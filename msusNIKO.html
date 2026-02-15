@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Niko Pongračić - Multimedijalni sustavi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            background: url("background.jpg") center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            min-height: 100vh;
+            padding: 30px 0 60px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            margin-top: 25px;
+            background-color: #BF5645;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 60px;
+            max-width: 700px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+            main {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="overlay">
+    <div class="container">
+        <header>
+            <h1>Niko Pongračić</h1>
+            <h2>MULTIMEDIJALNI SUSTAVI</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="#">POČETNA</a></li>
+                    <li><a href="#">GIMP</a></li>
+                    <li><a href="#">INKSCAPE</a></li>
+                    <li><a href="#">SCRIBUS</a></li>
+                    <li><a href="#">BLENDER</a></li>
+                    <li><a href="#">REAPER</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="title">PROJEKT IZ MULTIMEDIJALNIH SUSTAVA</div>
+            <div class="subtitle">Dobro Došli na moj wordpress profil!</div>
+
+            <p>
+                Ovdje možete pronaći nekolicinu zanimljivih sadržaja kreiranih u nekoliko različitih programa
+                u svrhu postizanja naprednije korištenja alata za obradu slika, glazbe, 3D modela i drugo.
+                Koristila sam programe Gimp, Inkscape, Scribus, Blender te Reaper. Primjeri rezultata za svaki
+                program postavljeni su na karticama ispod naslova stranice.
+            </p>
+        </main>
+    </div>
+</div>
+</body>
+</html>
