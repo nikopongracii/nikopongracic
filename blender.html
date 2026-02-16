@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Niko Pongračić - Multimedijalni sustavi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            background: url("background.png") center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            min-height: 100vh;
+            padding: 30px 0 60px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            margin-top: 25px;
+            background-color: #BF5645;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 60px;
+            max-width: 700px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+            main {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="overlay">
+    <div class="container">
+        <header>
+            <h1>Niko Pongračić</h1>
+            <h2>MULTIMEDIJALNI SUSTAVI</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">POČETNA</a></li>
+                    <li><a href="msusgimp.html">GIMP</a></li>
+                    <li><a href="#">INKSCAPE</a></li>
+                    <li><a href="#">SCRIBUS</a></li>
+                    <li><a href="blender.html">BLENDER</a></li>
+                    <li><a href="#">REAPER</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="title">BLENDER</div>
+            <div class="subtitle"></div>
+
+            <p>
+                Odlučio sam napraviti 3D model u Blenderu. Cilj je bio napraviti detaljniji model Minecraft kocke koja će imati i teksturu odabranog modela.
+                Odabrao sam model bundeve tj. pumpkin.
+            </p>
+            <br>
+            <ul>
+                <li>Odlučio sam koristiti već izrađenu kocku. Prvo sam uvezao sliku koju ću koristiti kao teksturu za model</li>
+                <li>Uvezenu sliku sam duplicirao više puta tako da imam dovoljno slika za svaku stranu kocke </li>
+                <li>Slike sam micao pomoću tipke G(Grab), a rotirao sam ih pomoću tipke R(rotate).
+                  Možemo rotirati objekt za svaku os ovisno koju smo os odabrali pritiskajući tipke X, Y, Z. Slike sam pozicirao zasebno na svaku stranu kocke  </li>
+                <li>Zatim sam prešao iz objekt mode u edit mode.
+                   Pomoću poziciranih slika sam odabrao dijelove koje želim istisnuti pomoću alata Extrude.</li>
+                <li>Zatim modelu dodajem materijal uvozom slika. Pomoću alata UV editing teksturu pomičem na željenu lokaciju</li>
+                <li>Rezultat:</li>
+            </ul>
+            <img src="pumpkinbez.png" alt="Dizajn majice" width="100%" height="75%">
+            <img src="pumpkinpravi.png" alt="Dizajn majice" width="100%" height="75%">
+        </main>
+    </div>
+</div>
+</body>
+</html>
