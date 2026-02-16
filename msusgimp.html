@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Niko Pongračić - Multimedijalni sustavi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            background: url("background.jpg") center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            min-height: 100vh;
+            padding: 30px 0 60px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            margin-top: 25px;
+            background-color: #BF5645;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 60px;
+            max-width: 700px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+            main {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="overlay">
+    <div class="container">
+        <header>
+            <h1>Niko Pongračić</h1>
+            <h2>MULTIMEDIJALNI SUSTAVI</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="#">POČETNA</a></li>
+                    <li><a href="msusgimp.html">GIMP</a></li>
+                    <li><a href="#">INKSCAPE</a></li>
+                    <li><a href="#">SCRIBUS</a></li>
+                    <li><a href="#">BLENDER</a></li>
+                    <li><a href="#">REAPER</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="title">GIMP</div>
+            <div class="subtitle"></div>
+
+            <p>
+                U GIMP-u sam izradio dizajn svoje odjeće tj. izradio sam dizajn svoje majice.
+                 Pri izradi cilj mi je bio da imam barem 3 sloja, tekst, masku i jednu umetnutu sliku.
+            </p>
+            <br>
+            <ul>
+                <li>Otvorio sam novi datoteku koristeći File > new i odabrao sam veličinu 1920x1080, zatim napravio uvoz crne majice s dugim rukavima kao sloj tj. layer</li>
+                <li>Zatim sam razdvojio majicu kao posebni sloj tj. layer te sam od majice pozadinu stavio kao vlastiti sloj</li>
+                <li>Dizajn sam također radio u vlastitom sloju, dizajn na majici su radio pomoću kista tj. brush. Odabrao sam crvenu boju, promijenio sam veličinu četke i njezin oblik</li>
+                <li>Zatim sam kao novi sloj dodao uvezenu sliku grada. Pomoći alata odabira(select) izbrisao sam pozadinu slike koja mi nije potrebna za dizajn majice.
+                   Zatim pomoću alata "Transform" sliku pomičem na željenu lokaciju i mijenjam njezinu veličinu</li>
+                <li>U novi sloj dodajem tekst "The city never sleeps; it only dreams" pomoću alata za tekst,
+                  zatim ga pomoću alata Transform stavljam u željenu poziciju. Font i veličinu fonta mijenjam isto pomoću alata za tekst.</li>
+                <li>Nakraju dodajem novi sloj za potpis, a potpis stvaram pomoću alata kista tj. brush</li>
+                <li>Rezultat:</li>
+            </ul>
+            <img src="Shirtt.png" alt="Dizajn majice" width="100%" height="75%">
+        </main>
+    </div>
+</div>
+</body>
+</html>
