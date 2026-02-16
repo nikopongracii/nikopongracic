@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Niko Pongračić - Multimedijalni sustavi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            background: url("background.png") center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            min-height: 100vh;
+            padding: 30px 0 60px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            margin-top: 25px;
+            background-color: #BF5645;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 60px;
+            max-width: 700px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+            main {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="overlay">
+    <div class="container">
+        <header>
+            <h1>Niko Pongračić</h1>
+            <h2>MULTIMEDIJALNI SUSTAVI</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">POČETNA</a></li>
+                    <li><a href="msusgimp.html">GIMP</a></li>
+                    <li><a href="blender.html">BLENDER</a></li>
+                    <li><a href="audacity.html">Audacity</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="title">Audacity</div>
+            <div class="subtitle"></div>
+
+            <p>
+                U ovom dijelu projekta koristio sam audacity. Odabrao sam dvije pjesme koje sam učitao u audacity.
+            </p>
+            <br>
+            <ul>
+                <li>Učitao sam pjesme Pismo moja i Cesarica od Olivera Dragojevića pomoću opcije import audio. (File > Import > Audio) </li>
+                <li>Prvu pjesmu sam smanjio tako da traje samo 50 sekundi pomoću delete. Isto sam napravio i za drugu pjesmu </li>
+                <li> Zatim sam kopirao drugu pjesmu u isti "Track" prve pjesme. Zatim sam dvije pjesme razdvojio tako da postoji tišina od 10 sekundi  </li>
+                <li>Pjesme se mogu micati pomoću "Time shift tool".</li>
+                <li>Zatim sam dobiveni rezultat izvezao pomoću Export tj. export as MP3</li>
+                <li>Rezultat:</li>
+            </ul>
+            <audio controls>
+              <source src="Oliver-DragojevicAudacity.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+
+              <div>
+              <p>Poveznica za pjesmu na soundcloud-u:</p>
+              <a href="https://soundcloud.com/niko-pongra-i/oliver-dragojevicaudacity">Soundcloud</a>
+              <div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
